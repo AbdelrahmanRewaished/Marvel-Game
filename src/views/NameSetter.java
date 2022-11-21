@@ -63,8 +63,7 @@ public class NameSetter extends GameViews implements ActionListener, KeyListener
 	}
 	public void actionPerformed(ActionEvent e)
 	{
-		if(e.getSource() == button)
-		{
+		if(e.getSource() == button) {
 			String t = textfield.getText();
 			if(t.equals(""))
 			{
