@@ -615,12 +615,12 @@ public class MainView extends GameViews implements ActionListener
 			if(clip.isRunning())
 			{
 				clip.stop();
-				sound.setIcon(new ImageIcon(components_package + "components/mute_audio.png"));
+				sound.setIcon(new ImageIcon(components_package + "mute_audio.png"));
 			}
 			else
 			{
 				clip.start();
-				sound.setIcon(new ImageIcon(components_package + "components/audio.png"));
+				sound.setIcon(new ImageIcon(components_package + "audio.png"));
 			}
 		}
 		Point point = contains(button);

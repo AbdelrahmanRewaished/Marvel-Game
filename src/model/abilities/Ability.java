@@ -50,7 +50,7 @@ abstract public class Ability {
 	abstract public void execute(ArrayList<Damageable> targets) throws CloneNotSupportedException;	
 	public String toString(int s)
 	{
-		String description = "Ability Name: " + name +  " \nAbility Type: ";
+		String description = "- Ability Name: " + name +  "    \n- Ability Type: ";
 		if(this instanceof CrowdControlAbility)
 		{
 			description += "Crowd Control Ability";
@@ -63,11 +63,11 @@ abstract public class Ability {
 		{
 			description += "Healing Ability";
 		}
-		description += "\n" + "    Mana Cost: " + manaCost + "\n" + "    Base Cool Down: " + baseCooldown + 
-				"\n    Current Cool Down: " + currentCooldown + "\n" +   "    Cast Range: " + castRange + "\n" + "    Required Action Points: " + requiredActionPoints + "\n" +
-				"    Cast Area: " + castArea.toString() + "\n";
+		description += "\n" + "   - Mana Cost: " + manaCost + "\n" + "   - Base Cool Down: " + baseCooldown +
+				"\n   - Current Cool Down: " + currentCooldown + "\n" +   "   - Cast Range: " + castRange + "\n" + "   - Required Action Points: " + requiredActionPoints + "\n" +
+				"   - Cast Area: " + castArea.toString() + "\n";
 		if(s > 0)
-			description = s + " )" + description;
+			description = "\n" + s + ")" + description;
 		return description;
 	}
 }

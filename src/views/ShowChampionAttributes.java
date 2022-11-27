@@ -28,10 +28,11 @@ public class ShowChampionAttributes extends JFrame implements ActionListener, Ke
 //		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		champ = c;
 		button = b;
-		setBounds(200, 200, 500, 500);
+		setBounds(200, 200, 500, 1000);
 		JTextArea text = new JTextArea();
-		text.setPreferredSize(new Dimension(500, 500));
+		text.setPreferredSize(new Dimension(500, 800));
 		text.setText(champ.toString(false) + champ.showAbilities());
+		text.setFont(new Font("Arial Black", Font.BOLD, 11));
 		text.setEditable(false);
 		JButton button;
 		button = new JButton ("Add");

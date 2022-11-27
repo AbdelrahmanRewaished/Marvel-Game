@@ -181,20 +181,20 @@ abstract public class Champion implements Damageable, Comparable{
 	
 	public String toString(boolean isCurrent)
 	{
-		String description = "Name: " + name + "\nType: ";
+		String description = "- Name: " + name + "\n- Type: ";
 		if(this instanceof Hero)
 			description += "Hero\n";
 		else if(this instanceof Villain)
 			description += "Villain\n";
 		else
 			description += "AntiHero\n";
-		description += ! leaderSet ? "Max Health Points: " + maxHP : "Current Health Points: " + currentHP;
-		description += "\nMana: " + mana + "\n";
-		description += ! isCurrent ? "Max Action Points Per Turn: " + maxActionPointsPerTurn :  "Current Action Points: " + currentActionPoints;
-		description +=  "\nAttack Range: " + attackRange +	"\nAttack Damage: " + attackDamage + "\nSpeed: " + speed + "\n";
+		description += ! leaderSet ? "- Max Health Points: " + maxHP : "- Current Health Points: " + currentHP;
+		description += "\n- Mana: " + mana + "\n";
+		description += ! isCurrent ? "- Max Action Points Per Turn: " + maxActionPointsPerTurn :  "- Current Action Points: " + currentActionPoints;
+		description +=  "\n- Attack Range: " + attackRange +	"\n- Attack Damage: " + attackDamage + "\n- Speed: " + speed + "\n";
 		if(leaderSet)
 		{
-			description += "Is a Leader: ";
+			description += "- Is a Leader: ";
 			description += isLeader ? "Yes" : "No";
 		}
 		description += showAppliedEffects();
@@ -206,7 +206,7 @@ abstract public class Champion implements Damageable, Comparable{
 		int i = 1;
 		StringBuilder description = new StringBuilder("""
 
-				Abilities:\s
+				- Abilities:\s
 				""");
 		for(Ability a: getAbilities())
 		{
@@ -218,13 +218,13 @@ abstract public class Champion implements Damageable, Comparable{
 	
 	public String showAppliedEffects()
 	{
-		StringBuilder description = new StringBuilder("\nApplied Effects: ");
+		StringBuilder description = new StringBuilder("\n- Applied Effects: ");
 		description.append(appliedEffects.isEmpty() ? "Nothing Yet" : "\n");
 		for(Effect e: appliedEffects)
 		{
 			description.append(e.toString());
 		}
-		return description.toString();
+		return description + "\n";
 	}
 	
 	public static void main(String[] args) {
