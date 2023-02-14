@@ -1,4 +1,4 @@
-# marvel-game
+# Marvel Ultimate War Game
 
 ## Description
 
