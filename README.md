@@ -16,5 +16,7 @@ There are 10 effects in the game: 5 positive effects (buff) and 5 negative effec
 Download Intellij Idea from <a href="https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC">here</a><br>
 Once It is downloaded 
 open File -> New -> Project from Version Control
-and copy this url https://github.com/AbdoRewaished/marvel-game/
+and copy this url
+https://github.com/AbdoRewaished/marvel-game/
+
 Finally, you can run the project from shift + F10
