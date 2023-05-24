@@ -20,3 +20,11 @@ and copy this url
 https://github.com/AbdoRewaished/marvel-game/
 
 Finally, you can run the project from shift + F10
+
+## Contributers
+<a href="https://github.com/AbdelrahmanRewaished">@Abdelrahman Rewaished</a>
+<br>
+<a href="https://github.com/HabibaAdelAly">@Habiba Adel</a>
+
+
+
