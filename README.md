@@ -17,7 +17,7 @@ Download Intellij Idea from <a href="https://www.jetbrains.com/idea/download/dow
 Once It is downloaded 
 open File -> New -> Project from Version Control
 and copy this url
-https://github.com/AbdoRewaished/marvel-game/
+https://github.com/AbdelrahmanRewaished/marvel-game/
 
 Finally, you can run the project from shift + F10
 
